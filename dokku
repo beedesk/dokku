@@ -253,6 +253,8 @@ EOF
       dokku_log_warn "See \`dokku help\` for a list of available commands."
       echo "Command $1 is not implemented."
       exit 1
+    else
+      echo "Command $1 is implemented."
     fi
     ;;
 
