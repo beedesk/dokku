@@ -96,8 +96,8 @@ EOF
     else
       args=$*
     fi
-    dokku_log_warn "Executing (git-shell -c $args)"
     git-shell -c "$args"
+    dokku_log_warn "Executed (git-shell -c $args)"
     ;;
 
   help | git:help)
