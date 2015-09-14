@@ -251,6 +251,7 @@ EOF
     if [[ "$implemented" -eq 0 ]]; then
       dokku_log_warn "\`$*\` is not a dokku command."
       dokku_log_warn "See \`dokku help\` for a list of available commands."
+      echo "Command $1 is not implemented."
       exit 1
     fi
     ;;
