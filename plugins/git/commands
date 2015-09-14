@@ -96,7 +96,7 @@ EOF
     else
       args=$*
     fi
-    echo "Executing (git-shell -c $args)"
+    dokku_log_warn "Executing (git-shell -c $args)"
     git-shell -c "$args"
     ;;
 
